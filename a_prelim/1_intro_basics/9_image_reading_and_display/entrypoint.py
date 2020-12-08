@@ -16,7 +16,8 @@ k = waitKey(0) & 0xFF
 if k == 27:
     destroyAllWindows()
 
-# wait for 's' key to save and exit.
+# wait signal for 's' key press to save and exit.
 elif k == ord('s'):
-    imwrite('messigray.png',img)
+    # Save the result on first-time execution, so that there's no need to excecute the script when looking at the result.
+    imwrite('messigray.png', img)
     destroyAllWindows()
