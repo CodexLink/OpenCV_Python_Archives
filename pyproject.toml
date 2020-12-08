@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "opencv_python_archives"
+version = "0.1.0"
+description = "A set of Python Application with OpenCV, taken from the modules that I have in my 3rd Year 2nd Sem with Improved Demo Samples along with Annotations for every possible parts."
+authors = ["Janrey Licas <janjan.licas@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.4.0"
+numpy = "1.19.3"
+matplotlib = "^3.3.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
