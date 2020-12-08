@@ -8,7 +8,7 @@ image = imread("../0_assets/road.jpg")
 # // as it is an in-place operation.
 # output = image.copy()
 # ! As of opencv-python==4.4.0.46 (not sure for onwards).
-# ! It is now possible to use the variable who holds imread function.
+# ! It is now possible to use the variable who holds imread function return buffer.
 
 # Using the rectangle() function to create a rectangle from an image canvas.
 """
