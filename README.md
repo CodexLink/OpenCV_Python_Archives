@@ -55,12 +55,13 @@ WIP.
 
 The assignments I put here were not a type of system that's usually deployed on the hardware. So using **Shell with Popen** does not concern me at this point. The following code pattern checking rules has been excluded:
 
-1.  **B602** — _subprocess_popen_with_shell_equals_true_
-2.  **B603** — _subprocess_without_shell_equals_true_
-3.  **B604** — _any_other_function_with_shell_equals_true_
-4.  **B605** — _start_process_with_a_shell_
-5.  **B606** — _start_process_with_no_shell_
-6.  **B607** — _start_process_with_partial_path_
+1.  **B602** — _subprocess_popen_with_shell_equals_true_ (Bandit)
+2.  **B603** — _subprocess_without_shell_equals_true_ (Bandit)
+3.  **B604** — _any_other_function_with_shell_equals_true_ (Bandit)
+4.  **B605** — _start_process_with_a_shell_ (Bandit)
+5.  **B606** — _start_process_with_no_shell_ (Bandit)
+6.  **B607** — _start_process_with_partial_path_ (Bandit)
+7.  **W0105** — _pointless-string-statement_ (Pylint)
 
 ## Credits
 
