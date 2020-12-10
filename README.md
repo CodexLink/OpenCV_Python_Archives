@@ -58,6 +58,7 @@ WIP.
 The assignments I put here were not a type of system that's usually deployed on the hardware. So using **Shell with Popen** does not concern me at this point. The following rules has been excluded:
 
 1.  B602 — subprocess_popen_with_shell_equals_true
+
 2.
 
 ## Credits
