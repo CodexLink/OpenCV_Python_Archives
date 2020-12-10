@@ -6,7 +6,7 @@
         "ol_multi": 2,
         "ul_multi": 2,
         "ol_single": 2,
-        "ul_single": 2,
+        "ul_single": 2
     },
     "MD033": {
         "allowed_elements": ["div", "h1", "h4", "br"]

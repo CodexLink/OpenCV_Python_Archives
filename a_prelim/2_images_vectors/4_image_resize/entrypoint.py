@@ -24,7 +24,6 @@ from matplotlib.pyplot import (
     * (2) INTER_LANCZOS4  — a Lanczos interpolation over 8×8 pixel neighborhood. Potentially usable for pixel-candidate for image shrinking and enlargement.
 
     For now, only INTER_LINEAR, INTER_AREA, and INTER_CUBIC will be introduced for now.
-
 """
 
 # # If you're still confused, here's a great article to read about image scaling.
