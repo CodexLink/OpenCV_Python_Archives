@@ -20,8 +20,8 @@ In this section, you will learn how to get up and running with the scripts for e
 Before you start, you should have the following:
 
 1. **Python 3.8 x64** in your system.
-1.2 Has `poetry` package installed in your python.
-2. Any IDE with Integrated Terminal, just like [Visual Studio Code](https://code.visualstudio.com/).
+2. Has `poetry` package installed in your python.
+3. Any IDE with Integrated Terminal, just like [Visual Studio Code](https://code.visualstudio.com/).
 
 > Be aware that `virtualenvs` of poetry is not detected by default by Visual Studio Code. Please refer to the [StackOverflow Issue](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option) or [Github Issue](https://github.com/microsoft/vscode-python/issues/8372).
 
