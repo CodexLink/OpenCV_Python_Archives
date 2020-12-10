@@ -30,9 +30,7 @@ Before you start, you should have the following:
 ### Instructions
 
 1.  **Clone** (_If you want to only have a copy of this repo_) or **Fork** (_If you want to commit your own changes_) this repository.
-
 2.  Open the repository folder in your IDE or path your Terminal / Command Prompt to the repository folder that you just cloned / forked.
-
 3.  Type the following:
 
 ```text
