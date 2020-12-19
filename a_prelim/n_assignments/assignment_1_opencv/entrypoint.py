@@ -44,10 +44,10 @@ class AssignmentHandler(object):
             )
 
         # * Contraint | Check for `stored_filename` should be truthy to type(str).
-        if not isinstance(stored_filename_ext, str):
+        if not isinstance(stored_filename, str):
             raise SystemExit(
                 "Filename should be or atleast contain a %s and not purely made of %s!"
-                % (str, type(stored_filename_ext))
+                % (str, type(stored_filename))
             )
 
         # # Constants
@@ -192,5 +192,4 @@ if __name__ == "__main__":
 
     raise SystemExit("The script has finished executing.\n")
 
-else:
-    raise SystemError("Cannot import this module from another script.\n")
+raise SystemError("Cannot import this module from another script.\n")
