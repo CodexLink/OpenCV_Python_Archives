@@ -9,10 +9,9 @@ from cv2 import imread, imshow, destroyAllWindows, waitKey
 from tkinter import filedialog,
 
 class VectorAssignmentClass(object):
-    def __init__(self, filename: str, filename_extension: str) -> None:
 
-        # Pre-Initialization, Clear the terminal first.
-        Popen("CLS", shell=True).communicate()
+    def __init__(self, filename: str, filename_extension: str) -> None:
+        Popen("CLS", shell=True).communicate() # Pre-Initialization, Clear the terminal first.
 
         # ! Constraints
         # The constraints must be passed before initialization all attributes that will be used inside.
