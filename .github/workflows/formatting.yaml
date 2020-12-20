@@ -1,0 +1,20 @@
+name: Black Formatting
+
+on: [push, pull_request]
+
+jobs:
+  format_job:
+    name: Script Linting
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Step 1 | Repository Checkout
+      uses: actions/checkout@latest
+
+    - name: Step 2 | Python Setup
+      uses: actions/setup-python@latest
+      with:
+        python-version: "3.8.6"
+
+    - name: Step 3 | Black Formatting For All Scripts
+      uses: psf/black@stable
