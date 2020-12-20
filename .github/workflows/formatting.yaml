@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Step 1 | Repository Checkout
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2
 
     - name: Step 2 | Python Setup
       uses: actions/setup-python@latest
