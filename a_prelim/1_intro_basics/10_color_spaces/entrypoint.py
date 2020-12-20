@@ -20,7 +20,10 @@ imshow("Original Image of %s" % IMAGE_PATH, image)
 
 # Iterate for each Color Channel. Do not invoke wait signal for each window to see the comparison.
 for idx, eachColors in enumerate([B, G, R]):
-    imshow("%s Color Representation | %s" % (DISPLAY_WINDOW_COLOR_STRING[idx], IMAGE_PATH), eachColors)
+    imshow(
+        "%s Color Representation | %s" % (DISPLAY_WINDOW_COLOR_STRING[idx], IMAGE_PATH),
+        eachColors,
+    )
     imwrite(
         "rgb_%s_color.png" % DISPLAY_WINDOW_COLOR_STRING[idx].lower(),
         eachColors,

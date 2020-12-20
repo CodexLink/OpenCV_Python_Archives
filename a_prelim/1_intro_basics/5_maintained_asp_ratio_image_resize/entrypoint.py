@@ -16,10 +16,10 @@ old_dim = image.shape[:2]  # old_dim will get a value of class'tuple in (h, w).
 # ! Note that, old_dim() contains h and w, as a tuple.
 
 decl_width = 800
-ratio = decl_width / old_dim[1] # (1)
+ratio = decl_width / old_dim[1]  # (1)
 
 # Creating a tuple containing width and height after calculation.
-new_dim = (decl_width, int(old_dim[0] * ratio)) # (2)
+new_dim = (decl_width, int(old_dim[0] * ratio))  # (2)
 
 # First Parameter is the one who loads the image with imread.
 # Second Parameter is a tuple containing new width and height.

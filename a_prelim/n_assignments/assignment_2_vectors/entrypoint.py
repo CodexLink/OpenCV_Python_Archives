@@ -6,12 +6,16 @@ from typing import (
 )  # Type Hinting, for Strict Return Hinting Process for Standardization.
 from shutil import copy as copy_file  # For File Copying from SRC to DEST.
 from cv2 import imread, imshow, destroyAllWindows, waitKey
-from tkinter import filedialog,
+from tkinter import (
+    filedialog,
+)
+
 
 class VectorAssignmentClass(object):
-
     def __init__(self, filename: str, filename_extension: str) -> None:
-        Popen("CLS", shell=True).communicate() # Pre-Initialization, Clear the terminal first.
+        Popen(
+            "CLS", shell=True
+        ).communicate()  # Pre-Initialization, Clear the terminal first.
 
         # ! Constraints
         # The constraints must be passed before initialization all attributes that will be used inside.
@@ -46,10 +50,10 @@ class VectorAssignmentClass(object):
                 "OPTION_1": "Apply Blur with Gaussian Interpolation",
                 "OPTION_2": "Apply Blur with Median Interpolation",
                 "OPTION_3": "Apply Blur with Bilateral Interpolation",
-                "OPTIONALS" : {
+                "OPTIONALS": {
                     "RETAIN_ASPECT_RATIO": "Resize with Aspect Ratio",
                     "DO_NOT_RETAIN_ASPECT_RATIO": "Do not resize with Aspect Ratio",
-                }
+                },
             },
             "BASE_OPTION_4": {
                 "BASE_NAME": "Apply Enlargement or Shrinking to Image (with Interpolations)",
@@ -76,9 +80,9 @@ class VectorAssignmentClass(object):
         self.APPLY_RESIZE: Final = 4
         self.EXIT_SCRIPT: Final = 5
 
-        self.GAUSSIAN_OPTION : Final = 1
-        self.MEDIAN_OPTION : Final = 2
-        self.BILATERAL_OPTION : Final = 3
+        self.GAUSSIAN_OPTION: Final = 1
+        self.MEDIAN_OPTION: Final = 2
+        self.BILATERAL_OPTION: Final = 3
 
         self.file_image_result_metadata: Final = {
             "FILE_NAME": "result" if not filename else filename,
@@ -247,13 +251,25 @@ class VectorAssignmentClass(object):
             blur_interp_option = 0
             blur_write_option = 0
 
-            print("\n\n%s\n" % self.FEATURE_DISPLAY_STRS["BASE_OPTION_3"]["DESCRIPTION"])
+            print(
+                "\n\n%s\n" % self.FEATURE_DISPLAY_STRS["BASE_OPTION_3"]["DESCRIPTION"]
+            )
 
             for optionIndex in range(0, 3):
-                print("%i.) %s" % (optionIndex + 1, self.FEATURE_DISPLAY_STRS["BASE_OPTION_3"]["OPTION_%i" % optionIndex + 1]))
+                print(
+                    "%i.) %s"
+                    % (
+                        optionIndex + 1,
+                        self.FEATURE_DISPLAY_STRS["BASE_OPTION_3"][
+                            "OPTION_%i" % optionIndex + 1
+                        ],
+                    )
+                )
 
             try:
-                self.input_buffers["display_choices"] = int(input("Please choose your option |> "))
+                self.input_buffers["display_choices"] = int(
+                    input("Please choose your option |> ")
+                )
 
                 if self.input_buffers["display_choices"] == self.GAUSSIAN_OPTION:
                     pass
@@ -271,10 +287,10 @@ class VectorAssignmentClass(object):
 
                 # Make the user decide whether to overwrite or write a new result with appended (n) where is nth of the same file name.
 
-
             except ValueError:
                 print("Your choice is not an integer! Please try again.")
                 sleep(1)
+
 
 LOOP_ENDLESSLY = 1  # Constant Annotation on While Loop inside Driver.
 

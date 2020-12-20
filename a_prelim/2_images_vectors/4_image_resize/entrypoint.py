@@ -100,4 +100,6 @@ show_figure()  # ! Uncomment this line if you want to display the figure window.
 
 # In my perspective, I don't have tkinter, so I might wanna save it instead to see the result.
 # * Solution from the Issue: https://stackoverflow.com/a/58181952/5353223
-savefig("result.png") # Uncommment if you wanna see them 4 in 1 picture without executing this.
+savefig(
+    "result.png"
+)  # Uncommment if you wanna see them 4 in 1 picture without executing this.

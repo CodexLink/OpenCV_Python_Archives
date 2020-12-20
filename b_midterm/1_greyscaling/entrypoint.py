@@ -98,15 +98,21 @@ while LOOP_MENU_ENDLESSLY:
             # ! I don't know why we cannot put namedWindow result to a Variable because this method is too redundant.
             # * But it works either way.
             namedWindow(
-                "Image Rendered with " + ("imshow() function with Color Channel 0"
-                if choice_buffer == LOAD_IMAGE_WITH_IMREAD
-                else "cvtColor (using COLOR_BGR2GRAY)"),
+                "Image Rendered with "
+                + (
+                    "imshow() function with Color Channel 0"
+                    if choice_buffer == LOAD_IMAGE_WITH_IMREAD
+                    else "cvtColor (using COLOR_BGR2GRAY)"
+                ),
                 WINDOW_NORMAL,
             )
             imshow(
-                "Image Rendered with " + ("imshow() function with Color Channel 0"
-                if choice_buffer == LOAD_IMAGE_WITH_IMREAD
-                else "cvtColor (using COLOR_BGR2GRAY)"),
+                "Image Rendered with "
+                + (
+                    "imshow() function with Color Channel 0"
+                    if choice_buffer == LOAD_IMAGE_WITH_IMREAD
+                    else "cvtColor (using COLOR_BGR2GRAY)"
+                ),
                 greyscale_image_buffer,
             )
 
@@ -116,9 +122,14 @@ while LOOP_MENU_ENDLESSLY:
 
             # Assume this is the finally version of if and else.
             # Do not ask for save file confirmation but rather save it and notify the user that there is a new file saved under this script.
-            imwrite("result_%s.png" % ("imread" if choice_buffer == LOAD_IMAGE_WITH_IMREAD else "cvtColor"), greyscale_image_buffer)
+            imwrite(
+                "result_%s.png"
+                % ("imread" if choice_buffer == LOAD_IMAGE_WITH_IMREAD else "cvtColor"),
+                greyscale_image_buffer,
+            )
             print(
-                "The greyscale buffer image was automatically saved as 'result_%s.png' for quick inspection of the result and for future case." % ("imread" if choice_buffer == LOAD_IMAGE_WITH_IMREAD else "cvtColor")
+                "The greyscale buffer image was automatically saved as 'result_%s.png' for quick inspection of the result and for future case."
+                % ("imread" if choice_buffer == LOAD_IMAGE_WITH_IMREAD else "cvtColor")
             )
             sleep(2)
 

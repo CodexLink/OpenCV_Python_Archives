@@ -31,16 +31,16 @@ from numpy import ones, uint8
 
 # Constant
 
-WINDOW_TITLES = ["Original" , "Eroded", "Dilated"]
+WINDOW_TITLES = ["Original", "Eroded", "Dilated"]
 
 
 # Input your file path here.
 IMAGE_PATH = "../0_assets/img_8.png"
 
 # ! Modify your parameters here.
-PROCESS_ITERATION = 3 # The no of items for both erode and dilate buffer.
+PROCESS_ITERATION = 3  # The no of items for both erode and dilate buffer.
 
-MATRIX_SYMMETRIC_SIZE = 3 # * No of Col and Rows of the Kernel Matrix.
+MATRIX_SYMMETRIC_SIZE = 3  # * No of Col and Rows of the Kernel Matrix.
 
 # Read an image with default color RGB metric.
 original_image_buffer = imread(IMAGE_PATH, IMREAD_COLOR)
@@ -58,7 +58,9 @@ original_image_buffer = imread(IMAGE_PATH, IMREAD_COLOR)
 # * For erosion, we have to use a (m x n) of matrix with a value of 1.
 # * Because we only need to validate a certain pixel either 1 or 0. For Instance, 0 To Black, 1 To White for img_8.
 # # More Information Here: https://stackoverflow.com/questions/62417509/why-do-we-use-an-array-of-ones-for-a-kernel-in-opencv.
-kernel = ones((MATRIX_SYMMETRIC_SIZE, MATRIX_SYMMETRIC_SIZE), uint8) # We have to ensure that the matrix values are indeed, pure unsigned integer.
+kernel = ones(
+    (MATRIX_SYMMETRIC_SIZE, MATRIX_SYMMETRIC_SIZE), uint8
+)  # We have to ensure that the matrix values are indeed, pure unsigned integer.
 
 # Using erode and dilate methods.
 erode_buffer = erode(original_image_buffer, kernel, iterations=PROCESS_ITERATION)
@@ -67,7 +69,11 @@ dilate_buffer = dilate(original_image_buffer, kernel, iterations=PROCESS_ITERATI
 # Displaying the image with for loop to have a clean code.
 
 for idx, eachBuffers in enumerate([original_image_buffer, erode_buffer, dilate_buffer]):
-    imshow("%s Image of %s | Processed with %s Iteration/s" % (WINDOW_TITLES[idx], IMAGE_PATH, PROCESS_ITERATION), eachBuffers)
+    imshow(
+        "%s Image of %s | Processed with %s Iteration/s"
+        % (WINDOW_TITLES[idx], IMAGE_PATH, PROCESS_ITERATION),
+        eachBuffers,
+    )
     if idx > 0:
         imwrite("output_%s.png" % WINDOW_TITLES[idx].lower(), eachBuffers)
 
