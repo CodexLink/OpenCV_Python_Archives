@@ -25,7 +25,7 @@ Before you start, you should have the following:
 2.  Has `poetry` package installed in your python.
 3.  Any IDE with Integrated Terminal, just like [Visual Studio Code](https://code.visualstudio.com/).
 
-> Be aware that `virtualenvs` of poetry is not detected by default by Visual Studio Code. Please refer to the [StackOverflow Issue](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option) or [Github Issue](https://github.com/microsoft/vscode-python/issues/8372).
+> Be aware that `virtualenvs` of poetry is not detected by default by Visual Studio Code. Please refer to this [StackOverflow Issue](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option) or this [Github Issue](https://github.com/microsoft/vscode-python/issues/8372) for further information.
 
 ### Instructions
 
@@ -35,17 +35,14 @@ Before you start, you should have the following:
 
 ```text
 poetry install
-poetry run env python
 poetry shell
 ```
 
-In poetry, if you `poetry install` , all of the `--dev` and `main-dependencies` will be **installed**. If you don't want linting and formatting that is in `dev-dependencies` .
-
-You might wanna opt-out by installing it in a way as this:
+In poetry, if you `poetry install` , all of the `-dev-dependencies` and `main-dependencies` will be **installed**. If you don't want linting and formatting that is in `dev-dependencies` . You might wanna opt-out by installing it in a way as this:
 
 > poetry install --no-dev
 
-4.  Choose any **entry point script** file and run it.
+4.  After setup and environment detection, choose any **entry point script** file and run it.
 
 ## Issues and Contribution
 
