@@ -1,5 +1,5 @@
 <h1 align="center">OpenCV Python Application Archives</h1>
-<h4 align="center">A set of Python Applications with OpenCV-Python, NumPy and matplotlib, to be archived during Modular Group 3 Progression of CPE102 - Machine Perception.
+<h4 align="center">A set of Python Applications with OpenCV-Python, NumPy and potentially matplotlib, to be archived during Modular Group 3 Semester Progression of CPE102 - Machine Perception.
 
 <br>Archived for **Post**-Educational Purposes.
 
@@ -13,6 +13,26 @@
 
 </div>
 
+## Welcome
+
+Hello! This repository contains of all examples that were in my **CPE 102 Modules**. They were actually based from **Geek4Geeks Examples** but I managed to make modifications to my liking, to the point that, I make them more usable and runnable without any relative imports and other such issues that may occur some problems in the future.
+
+## TL;DR of Repository
+
+In this repository, you will get the following:
+
+1.  **Class-Based Script Assignments.**
+2.  **Examples were purely separated from one another.**
+3.  **Contains Annotations that may resolve future confusions.**
+4.  **Black Formatted Python Scripts**
+5.  **Consistent Filenames (entrypoint.py) along with Image Outputs (Mostly in PNG Format)**
+6.  **Easy To Use and Explorable Examples**
+7.  **Uses Tkinter for File Location Pathfinder**
+8.  **Contains Bonus [...] (*)***
+9.  **Contains Utilities for Basic Examples (Such as Importing of Script to Use File Explorer instead of Static Path Management) (*)**
+
+These should give you the whole context and benefits of this repository.
+
 ## Installation
 
 In this section, you will learn how to get up and running with the scripts for each folder.
@@ -21,11 +41,15 @@ In this section, you will learn how to get up and running with the scripts for e
 
 Before you start, you should have the following:
 
-1.  **Python 3.8 x64** in your system.
-2.  Has `poetry` package installed in your python.
-3.  Any IDE with Integrated Terminal, just like [Visual Studio Code](https://code.visualstudio.com/).
+1.  **Python 3.8.6 x64 (*)** in your system.
+2.  Has installed `poetry` package from the pip of your python.
+3.  Has an IDE even without Integrated Terminal. The most flexible one is [Visual Studio Code](https://code.visualstudio.com/).
 
-> Be aware that `virtualenvs` of poetry is not detected by default by Visual Studio Code. Please refer to this [StackOverflow Issue](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option) or this [Github Issue](https://github.com/microsoft/vscode-python/issues/8372) for further information.
+> ⚠️ Be aware that `virtualenvs` of poetry is not detected by default by Visual Studio Code. Please refer to this [StackOverflow Issue](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option) or this [Github Issue](https://github.com/microsoft/vscode-python/issues/8372) for further information.
+
+**Final Reminder:**
+
+> ❗ Also keep in mind that, the `pyproject.toml` accepts **Python 3.8 and above**! But the packages installed were designed for **Python 3.8.X.** So,please check again if you run to an issue before making an **Issue** or **Pull Requests**.
 
 ### Instructions
 
@@ -46,9 +70,9 @@ In poetry, if you `poetry install` , all of the `-dev-dependencies` and `main-de
 
 ## Issues and Contribution
 
-WIP.
+Casting an Issue or making a contribution is free. There will be no contribution template or issue template in this repository. Just be formal with your changes / PR and we will get to it.
 
-## Technicals: Code Quality Exclusions
+## Technical: Code Quality Exclusions
 
 The assignments I put here were not a type of system that's usually deployed on the hardware. So using **Shell with Popen** does not concern me at this point. The following code pattern checking rules has been excluded:
 
@@ -62,7 +86,7 @@ The assignments I put here were not a type of system that's usually deployed on 
 
 ## Credits
 
-???
+WIP.
 
 ## License
 
