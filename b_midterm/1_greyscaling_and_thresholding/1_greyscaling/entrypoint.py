@@ -2,7 +2,7 @@ from os.path import isfile
 from subprocess import Popen
 from time import sleep
 from tkinter import Tk
-from tkinter.filedialog import askopenfilename, asksaveasfile
+from tkinter.filedialog import askopenfilename
 
 # # From the OpenCV Library, import only the following.
 from cv2 import (
