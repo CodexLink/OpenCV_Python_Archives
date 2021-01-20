@@ -4,6 +4,8 @@ from cv2 import imread
 # Reading the image using imread() function
 image = imread("../0_assets/road.jpg")
 
+print(type(image))
+print(dir(image))
 # Extracting the height and width of an image using shape function property.
 
 # According to the documentation.

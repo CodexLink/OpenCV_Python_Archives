@@ -31,7 +31,7 @@ print(
 FILE_TYPES = [("Image Files (.jpeg .jpg .png)", ".jpeg .jpg .png")]
 DEFAULT_EXT = ".jpg"
 
-# Everytime we use the Tk associate classes, a small window will spawned.
+# Everytime we use the Tk associate classes, a small window will be spawned.
 # We have to withdraw it or hide it everytime we use its associate functions.
 
 root = Tk()

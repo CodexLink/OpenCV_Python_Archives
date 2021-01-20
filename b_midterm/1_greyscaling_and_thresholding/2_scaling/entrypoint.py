@@ -10,8 +10,6 @@ from tkinter.filedialog import askopenfilename
 
 from cv2 import INTER_AREA, INTER_CUBIC, imread, imwrite, resize
 
-# todo: Add more information to prevent disclosure of duplicate example.
-
 Popen("CLS", shell=True).communicate()
 sleep(0.5)
 
@@ -27,7 +25,7 @@ print(
 FILE_TYPES = [("Image Files (.jpeg .jpg .png)", ".jpeg .jpg .png")]
 DEFAULT_EXT = ".jpg"
 
-# Everytime we use the Tk associate classes, a small window will spawned.
+# Everytime we use the Tk associate classes, a small window will be spawned.
 # We have to withdraw it or hide it everytime we use its associate functions.
 
 root = Tk()
@@ -145,7 +143,7 @@ try:
 
 except IOError as TechErr:
     raise SystemError(
-        "Error: Cannot detect the file path or went missing after selection. Please try again later."
+        "Error: Cannot detect the file or went missing after selection. Please try again later."
         % TechErr
     )
 
